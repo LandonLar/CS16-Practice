@@ -93,6 +93,6 @@ string militaryToAMPM(string time) {
         hours -= 12;
     }
 
-    string NewTime = to_string(hours) + ":" + time.substr(2) + AMPM;
+    string NewTime = to_string(hours) + ":" + to_string(minutes) + AMPM;
     return NewTime;
 }
